@@ -1,0 +1,12 @@
+/etc/modprobe.d/kvm.conf
+
+---
+
+Open/Create a new file @ /etc/modprobe.d/ named "kvm.conf"
+Add these contents to your file:
+
+options kvm ignore_msrs=1
+
+---
+
+Save & Exit

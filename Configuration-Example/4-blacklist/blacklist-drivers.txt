@@ -1,0 +1,16 @@
+/etc/modprobe.d/blacklist.conf
+
+---
+
+Open/Create a new file @ /etc/modprobe.d titled "blacklist.conf"
+Inside of this file, place the following contents:
+
+blacklist radeon
+blacklist nouveau
+blacklist nvidia
+blacklist nvidiafb
+options nouveau modeset=0
+
+---
+
+Save & Exit when complete.

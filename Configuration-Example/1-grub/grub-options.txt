@@ -1,0 +1,25 @@
+/etc/default/grub
+
+---
+
+For Intel Users:
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
+
+For AMD Users:
+GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on"
+
+---
+
+If you are using a Intel CPU with terrible IOMMU grouping you can instead use:
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt pcie_acs_override=downstream,multifunction nofb nomodeset video=vesafb:off,efifb:off"
+
+thanks to: https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/
+
+---
+
+When you have added this to your grub bootloader; you can then run:
+$ update-grub
+
+---
+
+(yes, this is all)

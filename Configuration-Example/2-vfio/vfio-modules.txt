@@ -1,0 +1,14 @@
+/etc/modules
+
+---
+
+Inside of the /etc/modules file, simply put these IN-ORDER:
+
+vfio
+vfio_iommu_type1
+vfio_pci
+vfio_virqfd
+
+---
+
+Save the file and you are finished.

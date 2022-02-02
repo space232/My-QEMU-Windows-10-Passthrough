@@ -1,0 +1,12 @@
+/etc/modprobe.d/iommu_unsafe_interrupts.conf
+
+---
+
+Open/Create a new file @ /etc/modprobe.d/ named "iommu_unsafe_interrupts.conf"
+Add these contents to your file:
+
+options vfio_iommu_type1 allow_unsafe_interrupts=1
+
+---
+
+Save and exit.
