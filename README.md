@@ -6,8 +6,8 @@ Now, I would upgrade my GPU before doing this, but with the scalper market at th
 
 I would also just like to say that this page's main aim is to get Nested Virtualisation/Hyper-V enabled.
 
-NVIDIA is a ~~terrible~~ awesome company. You will not be able to use passthrough until... well:
-- You ensure your GPU ROM is patched.
+NVIDIA is a ~~awesome~~ terrible  company. You will not be able to use passthrough until... well:
+- You ensure your GPU ROM is patched. (some cards may not require this)
 - You ensure your GPU is isolated by vfio-pci.
 - You ensure that your mental wellbeing is stable enough to follow through several guides just to get it working.
 
